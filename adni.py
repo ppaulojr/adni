@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# NOTES FOR HARVARD MEDICAL SCHOOL COURSE (April, 2015)
+
 import math
 
 def avg (x):
@@ -70,11 +73,12 @@ class Patients:
 		amygd = [((i[14]+i[31]) / i[50]) for i in selmesures]
 		print "Gray Matter  %.2f %.3f"%(100*avg(grmat),100*stdev(grmat))
 		print "White Matter %.2f %.3f"%(100*avg(wmatt),100*stdev(wmatt))
-		print "Ventriculo L %.2f %.3f"%(100*avg(ventl),100*stdev(ventl))
-		print "Corno Vent L %.2f %.3f"%(100*avg(clvet),100*stdev(clvet))
-		print "Hipocampo    %.2f %.3f"%(100*avg(hippo),100*stdev(hippo))
-		print "Amigdala     %.2f %.3f"%(100*avg(amygd),100*stdev(amygd))
-
+		print "Lat-Vent     %.2f %.3f"%(100*avg(ventl),100*stdev(ventl))
+		print "Lat-Inf Vent %.2f %.3f"%(100*avg(clvet),100*stdev(clvet))
+		print "Hippocampus  %.2f %.3f"%(100*avg(hippo),100*stdev(hippo))
+		print "Amygdala     %.2f %.3f"%(100*avg(amygd),100*stdev(amygd))
+		
+	# Print data to train Support Vector Machine
 	def printSVM (self):
 		for i in self.lines:
 			for j in xrange(len(i)):
