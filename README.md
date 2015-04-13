@@ -1,7 +1,7 @@
 adni
 ====
 
-Alzheimer's Disease Neuroimaging Initiative (ADNI)
+Alzheimer's Disease Neuroimaging Initiative ([ADNI](http://www.adni-info.org/))
 
 Data
 ----
